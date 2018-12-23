@@ -133,7 +133,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 cat /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt
-the text that was with in the file appeard,
+the text that was with in the file appeard.
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
  
@@ -144,9 +144,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
- cat  head   /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt title
+ head   /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt 
 
-cat: title: No such file or directory
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -158,6 +158,16 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
+tail /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt 
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
@@ -169,8 +179,30 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt more
+
+Produced by John Bickers, David Widger and Others
 
 
+
+
+
+THE PRINCE
+
+by Nicolo Machiavelli
+
+Translated by W. K. Marriott
+
+
+Nicolo Machiavelli, born at Florence on 3rd May 1469. From 1494 to 1512
+held an official post at Florence which included diplomatic missions to
+various European courts. Imprisoned in Florence, 1512; later exiled and
+returned to San Casciano. Died at Florence on 22nd June 1527.
+
+
+
+
+ 
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -178,17 +210,20 @@ Write the command that you used below.  Describe what spacebar and q does after 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
-
+you can use less to read bref information on the reading or text,more to read more on it ,tail to get what at the end of the text ,head to get the title , and cat to get everything from the text. 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
-
+wc -w /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt 
+52639 /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l /Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt 
+ 5063 
 
 
 ==========
@@ -196,3 +231,6 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 Write the command that you used below.
 ----------
+cp */Users/Dtboss360/mtec1003-lab-03/books/other/pg1232.txt 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
